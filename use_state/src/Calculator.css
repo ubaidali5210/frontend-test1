@@ -1,0 +1,75 @@
+/* Reset defaults */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    height: 100%;
+    font-family: "Poppins", sans-serif;
+    background: #0f2027; /* Dark gradient background */
+}
+
+/* Container to center calculator */
+.calculator-container {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+}
+
+/* Glassmorphism calculator box */
+.calculator-box {
+    background: rgba(30, 30, 30, 0.5);
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.7);
+    text-align: center;
+    width: 300px;
+    border: 1px solid rgba(255,255,255,0.1);
+}
+
+/* Title */
+.calculator-title {
+    color: #fff;
+    font-size: 22px;
+    margin-bottom: 20px;
+}
+
+/* Count display */
+.count-display {
+    font-size: 36px;
+    color: #fff;
+    background: rgba(255,255,255,0.08);
+    padding: 15px 0;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+/* Buttons */
+.button-group {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.calc-button {
+    flex: 1;
+    padding: 12px 0;
+    font-size: 18px;
+    border: none;
+    border-radius: 10px;
+    background: linear-gradient(135deg, #4b6cb7, #182848);
+    color: #fff;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.calc-button:hover {
+    transform: scale(1.05);
+    opacity: 0.9;
+}
